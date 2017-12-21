@@ -1,7 +1,10 @@
 [{
-  "name":"Karthick",
-  "place": "chennai"
+  "name":"Harry Potter",
+  "place": "London"
   },{
-    "name":"Rahman",
-    "place":"chennai"
-    }]
+    "name":"Ron Weasley",
+    "place":"London"
+  },{
+    "name":"Hermonie Granger",
+    "place":"London"
+  }]
