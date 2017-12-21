@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+ <head>
+
+    <title>Sample Anglar Program</title>
+   <link rel="stylesheet" href="css/angular-material.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+  	<!-- AngularJS Material Dependencies -->
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/angular-animate.min.js"></script>
+    <script src="JS/angular-aria.min.js"></script>
+    <script src="JS/angular-route.min.js"></script>
+
+    <script src="JS/angular-material.min.js"></script>
+
+    <script src="JS/myController.js"></script>
+  </head>
+<body>
+
+<div ng-controller="myController">
+	<div layout="column" flex>
+    <div ng-include src="'Header.html'"></div>
+		<div layout="row" flex="80" style="min-height: 200px" layout-fill>
+			<div style="background-color: red;" flex="20" >
+			<a href='#/home'>Home</a>
+      <a href='#/list'>List</a>
+    <md-button class="md-raised md-primary" ng-click="go('/home')">Home</md-button>
+    <md-button class="md-raised md-primary" ng-click="go('/list')">List</md-button>
+			</div>
+			<div flex="80">
+			<main ng-view></main>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
